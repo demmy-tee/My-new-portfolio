@@ -10,19 +10,20 @@
     <title>Your Portfolio</title>
 </head>
 <body class="body">
-    <header class="nav">
+    <header class=>
         <nav class="navbar w-100">
-            <h1 class="">
-                Odogwu Tech
+            <h1>
+                Odogwu <span style="">Tech</span> 
             </h1>
+           
 
-            <div class="awesome1">
-                <a href="https: //www.facebook.com" class="fab fa-facebook display-5 mr-4" style="text-decoration: none;"> </a>
-                <a href=" https://www.intsagram.com" class="fab fa-instagram display-5 text-danger mr-4" style="text-decoration: none;"></a>
-                <a href="" class="fab fa-twitter display-5 text-info mr-4" style="text-decoration: none;"></a>
-                <a href="" class="fab fa-github display-5 text-white mr-5" style="text-decoration: none;"></a>
+            <div id="font-awesome">
+                <a href="https: //www.facebook.com" class="fab fa-facebook display-5" style="text-decoration: none;" id="facebook"> </a>
+                <a href=" https://www.intsagram.com" class="fab fa-instagram display-5" style="text-decoration: none;" id="instagram"></a>
+                <a href="#" class="fab fa-twitter display-5" style="text-decoration: none;" id="twitter"></a>
+                <a href="#" class="fab fa-github display-5" style="text-decoration: none;" id="github"></a>
            </div>  
-           <button class="btn-info">
+           <button class="contact-me">
             contact me 
            </button>                
         </nav>
@@ -34,14 +35,17 @@
                </div>
             </div>
         </div>
-          
+       
     </header> 
+    <br><br><br><br>
     
 
-    <main style="margin-top: 7rem;">
+    <main>
         <h2>
             <b>WHAT WE DO</b>
         </h2>
+        <br><br>
+        <h3 id="title"> My first javascript class</h3>
         <div class="card">
             <img src="assets/images/th.jpeg" alt="12">
             <p>
@@ -50,3 +54,75 @@
         </div>
     </main>   
 </body>
+<script>
+    // This is for javascript outputing
+    document.write("<h2 style='color:red'> CONTACT ME </h2>");
+    console.log("view me on console");
+   // window.alert("Register before proceeding!!");
+    document.getElementById("title").innerHTML="My second javascript class";
+
+    //variables 
+    let myName = " John DOE";
+    let my_age = 67;
+    let myCGPA = 5.0;
+    let mySchool ="KWASU";
+    
+    document.write( "Name:" + myName + "<br>");
+    document.write(" Age:" + my_age +"<br>");
+    document.write("CGPA:" + myCGPA +"<br>");
+    document.write("School:"+ mySchool +"<br>");
+    // this is for constant variable
+    const totalScore ="100%";
+    document.write(totalScore + "<br>");                                                
+
+    // operators
+let a = 75;
+let b = 76;
+
+document.write(a+b +"<br>");
+//conditional statement
+if( a > b){
+    document.write("A is greater");
+}
+else if (a<b){
+    document.write("B  is greater <br>");
+}
+else{
+    document.write( "A is equal to B");
+}
+ //switch statement
+
+ let score = "A";
+
+ switch(score){
+    case "A":
+    case "B":
+        document.write("Distinction <br><br><br><br><br>");
+    break;
+    case "C":
+    case "D":
+        document.write("Poor");
+        break;
+    case "E":
+    deefault:
+        document.write("Invalid Result ");
+        
+        
+ }
+  // array 
+  var data = Array("DANIEL", "60", "KWASU", "lamborghini urus ");
+  document.write("NAME:" + data[0]+"<br> <br>");
+  document.write("AGE:" + data[1] +"<br> <br>");
+  document.write("SCHOOL:"+ data[2]  + "<br> <br>");
+  document.write("CAR:"+ data[3]  + "<br> <br>");
+  
+  //another form of writing arrays is
+   //object
+   var ferrariSF90 = {
+    production_year:2022,
+    color:"Red, Green, Black",
+    liter_engine: "4 liter engine",
+    topSpeed:"450mph"
+   }
+   document.write("<b> FerrariSF90</b> <br>" + ferrariSF90.production_year + "<br>" + ferrariSF90.color +"<br>" + ferrariSF90['liter_engine'] +"<br>" + ferrariSF90.topSpeed);
+</script>
